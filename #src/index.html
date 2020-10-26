@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Test-task" />
+    <meta name="author" content="ZenkiOo" />
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="body">
+      <br />
+      <br />
+
+      <section class="popup-block">
+        <div class="popup">
+          <div class="popup-close close-popup"></div>
+          <h3 class="popup__title">Нарколог на дом 24/7</h3>
+          <p class="popup__desc">
+            После отправки заявки с вами свяжется оператор, чтобы уточнить адрес
+            и детали. Врач прибудет уже через 30 минут.
+          </p>
+
+          <form action="mail.php" method="POST" class="form">
+            <div class="form-group form-group-city">
+              <label class="field-group">
+                <span class="field-label">Город выезда</span>
+                <input name="user-name" class="field" required />
+              </label>
+            </div>
+            <div class="form-group form-group-phone">
+              <label class="field-group">
+                <span class="field-label">Контактный телефон</span>
+                <input
+                  name="user-phone"
+                  type="tel"
+                  class="field"
+                  placeholder="+7 (___) ___-__-__"
+                  required
+                />
+              </label>
+            </div>
+
+            <fieldset>
+              <div class="radio">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="binge"
+                  name="binge"
+                  value="binge"
+                  checked
+                />
+                <label class="checkbox-label" for="binge"
+                  >Вывод из запоя – от 3900 ₽</label
+                >
+
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="withdrawal"
+                  name="withdrawal"
+                  value="withdrawal"
+                />
+                <label class="checkbox-label" for="withdrawal"
+                  >Снятие ломки – от 5 900 ₽</label
+                >
+              </div>
+            </fieldset>
+
+            <div class="form-group form-actions">
+              <button class="button-submit" type="submit">Вызвать врача</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="person-block">
+        <div class="person">
+          <div class="person-desc">
+            <h2 class="person-desc__name">Шуров Василий Александрович</h2>
+            <span class="person-desc__merit">Главный врач клиники.</span>
+            <span class="person-desc__merit">Врачебный стаж более 15 лет</span>
+            <ul class="person-desc__merit-list merit-list">
+              <li class="merit-list__item">Психиатр-нарколог</li>
+              <li class="merit-list__item">
+                Член Национальной Наркологической Лиги
+              </li>
+              <li class="merit-list__item">
+                Обладатель премии Brand Awards’2019 в сфере медицины
+              </li>
+              <li class="merit-list__item">Эксперт популярных телешоу</li>
+            </ul>
+          </div>
+          <div class="person-app">
+            <p class="person-app__slogan">
+              «Мы строим лучшую сеть наркологических клиник и реабилитационных
+              центров в России и Восточной Европе.»
+            </p>
+            <button class="person-app__button">Записаться на приём</button>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
